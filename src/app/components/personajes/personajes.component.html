@@ -1,0 +1,26 @@
+<div id="general">
+    <h1>PERSONAJES DE FUTURAMA</h1>
+    <div class="botones">
+        <button mat-raised-button color="primary" (click)="paginaAnterior()">ANTERIOR</button>
+        <button mat-raised-button color="primary" (click)="paginaSiguiente()">SIGUIENTE</button>
+    </div>
+    <div id="listado">
+        @for (personaje of personajes; track $index) {
+            <div class="personaje">
+                <div>
+                    <img [src]="personaje.image" alt="" class="imagen">
+                </div>
+                <div>
+                    <h2>{{ personaje.name }}</h2>
+                    <p>Genero: {{ personaje.gender }}</p>
+                    <p>Status: {{ personaje.status }}</p>
+                    <p>Especie: {{ personaje.species }}</p>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="botones">
+        <button mat-raised-button color="primary" (click)="paginaAnterior()">ANTERIOR</button>
+        <button mat-raised-button color="primary" (click)="paginaSiguiente()">SIGUIENTE</button>
+    </div>
+</div>

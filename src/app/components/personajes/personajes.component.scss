@@ -1,0 +1,40 @@
+
+#general {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#listado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.personaje {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
